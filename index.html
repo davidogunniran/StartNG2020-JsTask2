@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // create array with required objects
+      var data = [ {principal : 2500, time : 1.8 }, {principal : 1000, time : 5 }, {principal : 3000, time : 1}, {principal : 2000, time : 3} ];
+        // initiate for loop to iterate objects
+        for (i=0; i < data.length; i++) {
+            // add argument to function to link array
+            function interestCalculator(array) {
+                    if (array[i].principal >= 2500 && 1 < array[i].time < 3) {
+                        rate = 3;
+                        console.log(rate);
+                    }
+                    else if(array[i].principal >= 2500 && array[i].time >= 3) { 
+                        rate = 4;
+                        console.log(rate);
+                    }
+                    else if(array[i].principal >= 2500 && array[i].time >= 3) { 
+                        rate = 2;
+                        console.log(rate);
+                    }
+                    else {
+                        rate = 1;
+                        console.log(rate);
+                    }
+                }
+        interestCalculator(data);
+            }
+        
+
+    </script>
+</body>
+</html>
